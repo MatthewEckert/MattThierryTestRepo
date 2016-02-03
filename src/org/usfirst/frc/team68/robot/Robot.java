@@ -25,6 +25,7 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
  */
 public class Robot extends IterativeRobot {
 	// Static fields
+	// Thierry needs to work on this
 	public static AirPump airPump;
 	public static Latches latches;
 	public static Intake intake;
@@ -67,6 +68,9 @@ public class Robot extends IterativeRobot {
 
     }
 	
+    /**
+     * Not sure what this does.
+     */
 	public void disabledPeriodic() {
 		Scheduler.getInstance().run();
 	}
