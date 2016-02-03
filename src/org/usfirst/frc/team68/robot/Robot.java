@@ -1,6 +1,8 @@
 
 package org.usfirst.frc.team68.robot;
 
+// Here are all the imports for this class
+
 import org.usfirst.frc.team68.robot.commands.Auton1;
 import org.usfirst.frc.team68.robot.commands.Auton2;
 import org.usfirst.frc.team68.robot.subsystems.AirPump;
@@ -25,6 +27,8 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
  */
 public class Robot extends IterativeRobot {
 	// Static fields
+	// Matts New Line
+	// Thierry needs to work on this
 	public static AirPump airPump;
 	public static Latches latches;
 	public static Intake intake;
