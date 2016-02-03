@@ -103,6 +103,7 @@ public class Robot extends IterativeRobot {
 
     /**
      * This function is called periodically during operator control
+     * to refresh the scheduler.
      */
     public void teleopPeriodic() {
         Scheduler.getInstance().run();
@@ -110,6 +111,7 @@ public class Robot extends IterativeRobot {
     
     /**
      * This function is called periodically during test mode
+     * in order to refresh the window.
      */
     public void testPeriodic() {
         LiveWindow.run();
