@@ -42,10 +42,10 @@ public class DriveTrain extends Subsystem {
 
 		// Reverse the motors such that joystick forward produces positive
 		// values and joystick backward produces negative values
-		drive.setInvertedMotor(RobotDrive.MotorType.kFrontLeft, true);
-		drive.setInvertedMotor(RobotDrive.MotorType.kRearLeft, true);
-		drive.setInvertedMotor(RobotDrive.MotorType.kFrontRight, true);
-		drive.setInvertedMotor(RobotDrive.MotorType.kRearRight, true);
+//		drive.setInvertedMotor(RobotDrive.MotorType.kFrontLeft, true);
+//		drive.setInvertedMotor(RobotDrive.MotorType.kRearLeft, true);
+//		drive.setInvertedMotor(RobotDrive.MotorType.kFrontRight, true);
+//		drive.setInvertedMotor(RobotDrive.MotorType.kRearRight, true);
 
 		// Enable the fail safe for the drive train
 		drive.setSafetyEnabled(true);
@@ -56,7 +56,7 @@ public class DriveTrain extends Subsystem {
         setDefaultCommand(new DriveWithJoysticks());
     }
 	public void tankDrive(double leftSpeed, double rightSpeed) {
-		drive.tankDrive(leftSpeed, rightSpeed, useSquaredInputs);
+		drive.tankDrive(leftSpeed*-1, rightSpeed*-1, useSquaredInputs);
 	}
 
 }
