@@ -1,10 +1,6 @@
 
 package org.usfirst.frc.team68.robot;
 
-import edu.wpi.first.wpilibj.IterativeRobot;
-import edu.wpi.first.wpilibj.command.Command;
-import edu.wpi.first.wpilibj.command.Scheduler;
-import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 import org.usfirst.frc.team68.robot.commands.Auton1;
 import org.usfirst.frc.team68.robot.commands.Auton2;
 import org.usfirst.frc.team68.robot.subsystems.AirPump;
@@ -12,6 +8,11 @@ import org.usfirst.frc.team68.robot.subsystems.DriveTrain;
 import org.usfirst.frc.team68.robot.subsystems.Gate;
 import org.usfirst.frc.team68.robot.subsystems.Intake;
 import org.usfirst.frc.team68.robot.subsystems.Latches;
+
+import edu.wpi.first.wpilibj.IterativeRobot;
+import edu.wpi.first.wpilibj.command.Command;
+import edu.wpi.first.wpilibj.command.Scheduler;
+import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
@@ -24,11 +25,12 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
  */
 public class Robot extends IterativeRobot {
 
-	public static DriveTrain driveTrain;
 	public static AirPump airPump;
 	public static Latches latches;
 	public static Intake intake;
 	public static Gate gate;
+	// moved the next line
+	public static DriveTrain driveTrain;
 	public static OI oi;
 
     Command autonomousCommand;
