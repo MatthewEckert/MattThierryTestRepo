@@ -24,7 +24,7 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
  * directory.
  */
 public class Robot extends IterativeRobot {
-	// This is Matts comment
+	// Static fields
 	public static AirPump airPump;
 	public static Latches latches;
 	public static Intake intake;
