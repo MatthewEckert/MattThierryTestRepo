@@ -1,11 +1,12 @@
 package org.usfirst.frc.team68.robot.subsystems;
 
-import edu.wpi.first.wpilibj.command.Subsystem;
 import org.usfirst.frc.team68.robot.RobotMap;
 import org.usfirst.frc.team68.robot.commands.IntakeWithJoysticks;
+
 import edu.wpi.first.wpilibj.DoubleSolenoid;
 import edu.wpi.first.wpilibj.DoubleSolenoid.Value;
 import edu.wpi.first.wpilibj.VictorSP;
+import edu.wpi.first.wpilibj.command.Subsystem;
 
 public class Intake extends Subsystem {
 	
@@ -66,12 +67,14 @@ public class Intake extends Subsystem {
 		this.setRightIntakeMotor(0);
 	}
 
-	public void setIntakeMotors(double leftSpeed, double rightSpeed) {
+	public void setIntakeMotors(double leftSpeed, 
+			                    double rightSpeed) {
 		this.setLeftIntakeMotor(leftSpeed);
 		this.setRightIntakeMotor(rightSpeed);
 	}
 
-	public void intakeWithXboxJoysticks(double leftXboxJoystickValue, double rightXboxJoystickValue) {
+	public void intakeWithXboxJoysticks(double leftXboxJoystickValue,
+			                            double rightXboxJoystickValue) {
 		this.setIntakeMotors(leftXboxJoystickValue, rightXboxJoystickValue);
 	}
 }
