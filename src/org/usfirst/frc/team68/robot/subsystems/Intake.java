@@ -67,6 +67,11 @@ public class Intake extends Subsystem {
 		this.setRightIntakeMotor(0);
 	}
 
+	/**
+	 * Set the speed of both motors.
+	 * @param leftSpeed
+	 * @param rightSpeed
+	 */
 	public void setIntakeMotors(double leftSpeed, 
 			                    double rightSpeed) {
 		this.setLeftIntakeMotor(leftSpeed);
